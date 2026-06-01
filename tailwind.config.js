@@ -7,12 +7,28 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors: {
+        forge: {
+          cream: {
+            DEFAULT: '#f9f6f2',
+            deep: '#ede8df',
+            text: '#111111',
+            muted: '#888888',
+          },
+          blue: {
+            DEFAULT: '#005bbb',
+            hover: '#3b82f6',
+          },
+          footer: '#1a1a1a',
+        },
+      },
       fontFamily: {
         serif: ['"Playfair Display"', 'Georgia', 'serif'],
         sans: ['"Inter"', 'Helvetica', 'Arial', 'sans-serif'],
       },
       animation: {
         'scroll-left': 'scroll-left 60s linear infinite',
+        'forge-glow': 'forge-glow 2s ease-in-out infinite alternate',
         'fade-in': 'fade-in 0.8s ease-out forwards',
         'fade-up': 'fade-up 0.8s ease-out forwards',
         'fade-down': 'fade-down 0.8s ease-out forwards',
@@ -54,6 +70,10 @@ module.exports = {
           '0%': { opacity: '0', transform: 'scale(0.8)' },
           '100%': { opacity: '1', transform: 'scale(1)' },
         },
+        'forge-glow': {
+          '0%': { boxShadow: '0 0 60px rgba(0,91,187,0.15)' },
+          '100%': { boxShadow: '0 0 90px rgba(0,91,187,0.30)' },
+        },
       },
     },
   },
@@ -67,4 +87,3 @@ module.exports = {
     },
   ],
 }
-
