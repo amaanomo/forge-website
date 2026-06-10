@@ -33,7 +33,7 @@ type Member = {
 
 const f25Members: Member[] = [
   { name: 'Amaan Sheikh', role: 'Founder', image: '/Headshots/Amaan.JPG', objectPosition: 'center 30%', imageScale: 1.7, imageTranslateY: 8, linkedin: 'https://www.linkedin.com/in/amaansheikhme/', website: 'https://www.amaans.dev/' },
-  { name: 'Charlotte Lee', role: 'Director of Operations', image: '/Headshots/CharlotteLee.png', objectPosition: 'center 50%', imageScale: 1, imageTranslateY: 0, linkedin: 'https://www.linkedin.com/in/charlotte-lee-12795b286/' },
+  { name: 'Charlotte Lee', role: 'Director of Operations', image: '/Headshots/charlotte.jpeg', objectPosition: 'center 50%', imageScale: 1.4, imageTranslateX: -4, imageTranslateY: 0, linkedin: 'https://www.linkedin.com/in/charlotte-lee-12795b286/' },
   { name: 'Leya Skaria', role: 'Director of Marketing', image: '/Headshots/Leya.png', objectPosition: 'center 80%', imageScale: 1.5, imageTranslateX: -5, linkedin: 'https://www.linkedin.com/in/leyaskaria/', website: 'https://leyaskarmport.my.canva.site/' },
   { name: 'Christabel Htoo', role: 'Director of Growth & Community', image: '/Headshots/Christabel.JPG', objectPosition: 'center 5%', imageScale: 1.5, imageTranslateY: 10, linkedin: 'https://www.linkedin.com/in/christabel-htoo/' },
   { name: 'Tahmina Fayezi', role: 'Director of Partnerships', image: '/Headshots/Tahmina.jpeg', objectPosition: 'center 65%', imageScale: 1.25, imageTranslateY: 5, linkedin: 'https://www.linkedin.com/in/tahmina-fayezi/', website: 'https://www.tahmina.tech/' },
@@ -44,7 +44,7 @@ const f25Members: Member[] = [
 
 const s26Members: Member[] = [
   { name: 'Amaan Sheikh', role: 'Founder', image: '/Headshots/Amaan.JPG', objectPosition: 'center 30%', imageScale: 1.7, imageTranslateY: 8, linkedin: 'https://www.linkedin.com/in/amaansheikhme/', website: 'https://www.amaans.dev/' },
-  { name: 'Charlotte Lee', role: 'Director of Operations', image: '/Headshots/CharlotteLee.png', objectPosition: 'center 50%', imageScale: 1, imageTranslateY: 0, linkedin: 'https://www.linkedin.com/in/charlotte-lee-12795b286/' },
+  { name: 'Charlotte Lee', role: 'Director of Operations', image: '/Headshots/charlotte.jpeg', objectPosition: 'center 50%', imageScale: 1.4, imageTranslateX: -4, imageTranslateY: 0, linkedin: 'https://www.linkedin.com/in/charlotte-lee-12795b286/' },
   { name: 'Ivan Chu', role: 'Director of Finance', image: '/Headshots/IvanChu.png', objectPosition: 'center 50%', imageScale: 1.35, imageTranslateX: -3, linkedin: 'https://www.linkedin.com/in/ivan-chu-/' },
   { name: 'Om Sethi', role: 'Director of Events & Programming', image: '/Headshots/om.jpeg', objectPosition: 'center 45%', imageScale: 1.0, linkedin: 'https://www.linkedin.com/in/omsethi-dev/', website: 'https://omsethi.dev/' },
   { name: 'Kyler Shih', role: 'Director of Events & Programming', image: '/Headshots/Kyler.JPG', objectPosition: 'center 30%', imageScale: 1.6, imageTranslateX: -3, imageTranslateY: 10, linkedin: 'https://www.linkedin.com/in/kyler-shih-8a66142bb/' },
