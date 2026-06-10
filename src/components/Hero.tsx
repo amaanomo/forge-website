@@ -110,7 +110,7 @@ const Hero = () => {
           <div className="relative w-full rounded-2xl overflow-hidden shadow-lg z-10">
             <video
               ref={videoRef}
-              src="/addedVids/forgewebvid.mp4"
+              src="/addedVids/forgewebvid_web.mp4"
               autoPlay
               muted
               loop
