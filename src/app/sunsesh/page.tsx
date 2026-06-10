@@ -56,7 +56,7 @@ export default function SunSesh() {
           <DoodleCircle size={200} opacity={0.06} />
         </div>
         <div className="max-w-5xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-start">
             <div>
               <p className="text-[#888888] text-[11px] tracking-[0.2em] uppercase mb-4">Community</p>
               <h1 className="font-serif text-5xl md:text-6xl font-bold text-[#111111] mb-6">

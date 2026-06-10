@@ -4,8 +4,8 @@ import { DoodleUnderline, DoodleCircle } from './DoodleAccent'
 
 const FellowshipTeaser = () => {
   return (
-    <section className="relative w-full bg-[#ede8df] py-36 px-8 md:px-20 overflow-hidden">
-      {/* Doodle circle — background */}
+    <section className="relative w-full bg-[#ede8df] py-20 md:py-36 px-8 md:px-20 overflow-hidden">
+      {/* Doodle circle - background */}
       <DoodleCircle size={200} opacity={0.10} className="absolute top-8 right-8 pointer-events-none" />
       <DoodleCircle size={100} opacity={0.08} className="absolute bottom-12 left-12 pointer-events-none" />
 

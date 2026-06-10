@@ -25,14 +25,14 @@ const Hero = () => {
 
   return (
     <section className="relative w-full bg-[#f9f6f2] flex items-center overflow-hidden">
-      {/* Doodle circle — top right background accent */}
+      {/* Doodle circle - top right background accent */}
       <DoodleCircle
         size={220}
         opacity={0.12}
         className="absolute top-12 right-8 md:right-24 pointer-events-none"
       />
 
-      {/* Doodle circle — bottom left background accent */}
+      {/* Doodle circle - bottom left background accent */}
       <DoodleCircle
         size={150}
         opacity={0.10}
@@ -41,7 +41,7 @@ const Hero = () => {
 
       <div className="w-full flex flex-col md:flex-row items-center md:items-center px-8 md:px-16 gap-8 md:gap-0 pt-28 pb-16 md:pt-64 md:pb-56">
 
-        {/* Left — wordmark + tagline */}
+        {/* Left - wordmark + tagline */}
         <div
           ref={leftRef}
           className="flex-1 md:w-[55%] flex flex-col justify-center"
@@ -56,7 +56,7 @@ const Hero = () => {
             sparklesCount={10}
             colors={{ first: '#005bbb', second: '#3b82f6' }}
             className="font-serif font-bold text-[#111111] leading-none select-none"
-            style={{ fontSize: 'clamp(80px, 14vw, 180px)' }}
+            style={{ fontSize: 'clamp(56px, 14vw, 180px)' }}
           />
           {/* Hand-drawn underline beneath wordmark */}
           <DoodleUnderline size={320} opacity={0.45} className="mt-1 mb-1" />
@@ -70,7 +70,7 @@ const Hero = () => {
           <div className="flex gap-6 mt-6">
             <button
               onClick={() => document.getElementById('what-we-do')?.scrollIntoView({ behavior: 'smooth' })}
-              className="group inline-flex items-center gap-2.5 text-[#111111]/60 hover:text-[#005bbb] text-sm transition-colors"
+              className="group inline-flex items-center gap-2.5 text-[#005bbb] hover:text-[#3b82f6] text-sm transition-colors text-glow-pulse"
             >
               <span
                 aria-hidden
@@ -80,7 +80,7 @@ const Hero = () => {
             </button>
             <Link
               href="/fellowship"
-              className="group inline-flex items-center gap-2.5 text-[#111111]/60 hover:text-[#005bbb] text-sm transition-colors"
+              className="group inline-flex items-center gap-2.5 text-[#005bbb] hover:text-[#3b82f6] text-sm transition-colors text-glow-pulse"
             >
               <span
                 aria-hidden
@@ -92,13 +92,13 @@ const Hero = () => {
           </div>
         </div>
 
-        {/* Right — video */}
+        {/* Right - video */}
         <div
           ref={rightRef}
           className="md:w-[50%] flex justify-center md:justify-end items-center relative"
           style={{ opacity: 0, transition: 'opacity 1s ease-out' }}
         >
-          {/* Video wrapper — clips rounded corners, contains overlay */}
+          {/* Video wrapper - clips rounded corners, contains overlay */}
           <div className="relative w-full rounded-2xl overflow-hidden shadow-lg z-10">
             <video
               src="/addedVids/forgewebvid.mp4"
@@ -109,12 +109,12 @@ const Hero = () => {
               preload="auto"
               className="w-full h-auto object-cover block"
             />
-            {/* Founded text — bottom-right on desktop, above icons on mobile */}
+            {/* Founded text - bottom-right on desktop, above icons on mobile */}
             <p className="absolute top-4 left-4 md:top-auto md:bottom-4 md:left-auto md:right-4 text-white text-[11px] tracking-[0.2em] uppercase">
               UB Forge · Founded S25
             </p>
 
-            {/* Social icons — overlaid bottom-left on the video */}
+            {/* Social icons - overlaid bottom-left on the video */}
             <div className="absolute bottom-4 left-4 flex items-center gap-4">
               {/* Twitter/X */}
               <a href="https://x.com/ubforge?s=21" target="_blank" rel="noopener noreferrer" aria-label="Twitter"
@@ -149,7 +149,7 @@ const Hero = () => {
             </div>
           </div>
 
-          {/* Blue doodle circle — behind video via -z-10 */}
+          {/* Blue doodle circle - behind video via -z-10 */}
           <DoodleCircle size={80} opacity={0.35} className="absolute bottom-6 left-2 md:-left-6 -z-10" />
         </div>
       </div>

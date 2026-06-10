@@ -39,15 +39,18 @@ const Navbar = () => {
 
   return (
     <nav className="w-full py-5 px-8 md:px-16 flex items-center justify-between fixed top-0 z-[200] bg-[#f9f6f2]/80 backdrop-blur-md border-b border-[#111111]/8">
-      {/* Logo — wordmark only */}
+      {/* Logo - wordmark only */}
       <Link href="/" className="font-serif font-bold text-[22px] text-[#111111] tracking-tight">
         Forge
       </Link>
 
-      {/* Desktop nav — centered */}
+      {/* Desktop nav - centered */}
       <div className="hidden md:flex items-center gap-7 absolute left-1/2 -translate-x-1/2">
         <Link href="/about" className="text-[#111111]/70 hover:text-[#111111] text-sm transition-colors">
           About
+        </Link>
+        <Link href="/meet-the-team" className="text-[#111111]/70 hover:text-[#111111] text-sm transition-colors">
+          Team
         </Link>
 
         {/* Culture dropdown */}
@@ -77,7 +80,7 @@ const Navbar = () => {
           Fellowship
         </Link>
 
-        {/* Globe icon — Atlas link (commented out for public launch, restore when ready) */}
+        {/* Globe icon - Atlas link (commented out for public launch, restore when ready) */}
         {/* <Link
           href="/atlas"
           className="text-[#111111]/60 hover:text-[#005bbb] transition-colors"
@@ -92,7 +95,7 @@ const Navbar = () => {
         </Link> */}
       </div>
 
-      {/* Right — Get Involved button + Forge logo */}
+      {/* Right - Get Involved button + Forge logo */}
       <div className="hidden md:flex items-center gap-3">
         {/* Get Involved dropdown */}
         <div ref={getInvolvedRef} className="relative">
@@ -164,6 +167,7 @@ const Navbar = () => {
         <div className="absolute top-full left-0 right-0 bg-[#f9f6f2] border-b border-[#111111]/10 md:hidden z-50">
           <div className="px-8 py-6 space-y-4">
             <Link href="/about" className="block text-[#111111]/70 hover:text-[#111111] py-2 transition-colors" onClick={() => setMobileMenuOpen(false)}>About</Link>
+            <Link href="/meet-the-team" className="block text-[#111111]/70 hover:text-[#111111] py-2 transition-colors" onClick={() => setMobileMenuOpen(false)}>Team</Link>
             <button
               className="flex items-center justify-between w-full text-[#111111]/70 hover:text-[#111111] py-2 transition-colors text-left"
               onClick={() => setCommunityOpen(!communityOpen)}

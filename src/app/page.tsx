@@ -15,25 +15,25 @@ export default function Home() {
     <div className="w-full min-h-screen bg-[#f9f6f2]">
       <Navbar />
 
-      {/* 1 — Hero (cream, full viewport) */}
+      {/* 1 - Hero (cream, full viewport) */}
       <Hero />
 
-      {/* 1b — Full-bleed B&W photo */}
+      {/* 1b - Full-bleed B&W photo */}
       <FullBleedPhoto />
 
-      {/* 2 — Statement (cream) */}
+      {/* 2 - Statement (cream) */}
       <StatementSection />
 
-      {/* 3 — What We Do (cream, glowing orbs) */}
+      {/* 3 - What We Do (cream, glowing orbs) */}
       <WhatWeDo />
 
-      {/* 5 — Companies Banner (cream) */}
+      {/* 5 - Companies Banner (cream) */}
       {/* <ScrollingBanner /> */}
 
-      {/* 8 — Closing (cream) */}
+      {/* 8 - Closing (cream) */}
       <ClosingSection />
 
-      {/* 9 — Footer */}
+      {/* 9 - Footer */}
       <Footer />
     </div>
   )

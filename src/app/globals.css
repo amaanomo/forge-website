@@ -64,6 +64,18 @@ body {
   animation: dot-pulse 2s ease-in-out infinite;
 }
 
+@keyframes text-glow {
+  0%, 100% {
+    text-shadow: 0 0 4px rgba(0, 91, 187, 0.3);
+  }
+  50% {
+    text-shadow: 0 0 10px rgba(0, 91, 187, 0.6), 0 0 20px rgba(0, 91, 187, 0.3);
+  }
+}
+.text-glow-pulse {
+  animation: text-glow 2s ease-in-out infinite;
+}
+
 /* Blue gradient text */
 .text-gradient-blue {
   background: linear-gradient(135deg, #005bbb, #3b82f6);
