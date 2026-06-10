@@ -56,7 +56,7 @@ const ClosingSection = () => {
         className="absolute bottom-20 left-1/3 pointer-events-none"
       />
 
-      {/* Content — centered */}
+      {/* Content - centered */}
       <div className="relative z-10 max-w-3xl mx-auto text-center flex flex-col items-center">
 
         {/* Thin rule */}
@@ -73,7 +73,7 @@ const ClosingSection = () => {
         >
           <h2
             className="font-serif italic text-[#111111] leading-tight tracking-tight"
-            style={{ fontSize: 'clamp(52px, 7vw, 96px)' }}
+            style={{ fontSize: 'clamp(38px, 7vw, 96px)' }}
           >
             Forge your future.
           </h2>

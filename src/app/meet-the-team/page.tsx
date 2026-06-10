@@ -24,44 +24,49 @@ type Member = {
   image: string | null
   initials?: string
   objectPosition?: string
+  imageScale?: number
+  imageTranslateX?: number
+  imageTranslateY?: number
   linkedin?: string
   website?: string
 }
 
 const f25Members: Member[] = [
-  { name: 'Amaan Sheikh', role: 'Executive Director', image: '/Headshots/Amaan.png', objectPosition: 'center 30%', linkedin: 'https://www.linkedin.com/in/amaansheikh-swe/', website: 'https://www.amaans.dev/' },
-  { name: 'Charlotte Lee', role: 'Director of Operations', image: '/Headshots/CharlotteLee.png', objectPosition: 'center 50%', linkedin: 'https://www.linkedin.com/in/charlotte-lee-12795b286/' },
-  { name: 'Leya Skaria', role: 'Director of Marketing', image: '/Headshots/LeyaSkaria.png', objectPosition: 'center 80%', linkedin: 'https://www.linkedin.com/in/leyaskaria/' },
-  { name: 'Tahmina Fayezi', role: 'Director of Partnership', image: '/Headshots/TahminaFayezi.png', objectPosition: 'center 50%', linkedin: 'https://www.linkedin.com/in/tahmina-fayezi/' },
-  { name: 'Kyler Shih', role: 'Co-director of Events', image: '/Headshots/KylerShih.png', objectPosition: 'center 30%', linkedin: 'https://www.linkedin.com/in/kyler-shih-8a66142bb/' },
-  { name: 'Matthew Chu', role: 'Co-director of Events', image: '/Headshots/MatthewChu.png', objectPosition: 'center 50%', linkedin: 'https://www.linkedin.com/in/matthewchu88/' },
-  { name: 'Christabel Htoo', role: 'Director of Growth', image: '/Headshots/ChristabelHtoo.png', objectPosition: 'center 5%', linkedin: 'https://www.linkedin.com/in/christabel-htoo/' },
+  { name: 'Amaan Sheikh', role: 'Founder', image: '/Headshots/Amaan.JPG', objectPosition: 'center 30%', imageScale: 1.7, imageTranslateY: 8, linkedin: 'https://www.linkedin.com/in/amaansheikhme/', website: 'https://www.amaans.dev/' },
+  { name: 'Charlotte Lee', role: 'Director of Operations', image: '/Headshots/CharlotteLee.png', objectPosition: 'center 50%', imageScale: 1, imageTranslateY: 0, linkedin: 'https://www.linkedin.com/in/charlotte-lee-12795b286/' },
+  { name: 'Leya Skaria', role: 'Director of Marketing', image: '/Headshots/Leya.png', objectPosition: 'center 80%', imageScale: 1.5, imageTranslateX: -5, linkedin: 'https://www.linkedin.com/in/leyaskaria/', website: 'https://leyaskarmport.my.canva.site/' },
+  { name: 'Christabel Htoo', role: 'Director of Growth & Community', image: '/Headshots/Christabel.JPG', objectPosition: 'center 5%', imageScale: 1.5, imageTranslateY: 10, linkedin: 'https://www.linkedin.com/in/christabel-htoo/' },
+  { name: 'Tahmina Fayezi', role: 'Director of Partnerships', image: '/Headshots/Tahmina.jpeg', objectPosition: 'center 65%', imageScale: 1.25, imageTranslateY: 5, linkedin: 'https://www.linkedin.com/in/tahmina-fayezi/', website: 'https://www.tahmina.tech/' },
   { name: 'Hua Yang', role: 'Director of Finance', image: '/Headshots/HuaYang.png', objectPosition: 'center 50%', linkedin: 'https://www.linkedin.com/in/huayang1/' },
+  { name: 'Kyler Shih', role: 'Director of Events & Programming', image: '/Headshots/Kyler.JPG', objectPosition: 'center 30%', imageScale: 1.6, imageTranslateX: -3, imageTranslateY: 10, linkedin: 'https://www.linkedin.com/in/kyler-shih-8a66142bb/' },
+  { name: 'Matthew Chu', role: 'Director of Events & Programming', image: '/Headshots/MatthewChu.png', objectPosition: 'center 50%', linkedin: 'https://www.linkedin.com/in/matthewchu88/' },
 ]
 
 const s26Members: Member[] = [
-  { name: 'Amaan Sheikh', role: 'Executive Director', image: '/Headshots/Amaan.png', objectPosition: 'center 30%', linkedin: 'https://www.linkedin.com/in/amaansheikh-swe/', website: 'https://www.amaans.dev/' },
-  { name: 'Charlotte Lee', role: 'Director of Operations', image: '/Headshots/CharlotteLee.png', objectPosition: 'center 50%', linkedin: 'https://www.linkedin.com/in/charlotte-lee-12795b286/' },
-  { name: 'Leya Skaria', role: 'Director of Marketing', image: '/Headshots/LeyaSkaria.png', objectPosition: 'center 80%', linkedin: 'https://www.linkedin.com/in/leyaskaria/' },
-  { name: 'Tahmina Fayezi', role: 'Director of Partnership', image: '/Headshots/TahminaFayezi.png', objectPosition: 'center 50%', linkedin: 'https://www.linkedin.com/in/tahmina-fayezi/' },
-  { name: 'Kyler Shih', role: 'Director of Events', image: '/Headshots/KylerShih.png', objectPosition: 'center 30%', linkedin: 'https://www.linkedin.com/in/kyler-shih-8a66142bb/' },
-  { name: 'Ivan Chu', role: 'Director of Fellowship', image: null, initials: 'IC' },
-  { name: 'Dev Pradeep', role: 'Director of Community', image: null, initials: 'DP' },
-  { name: 'Ivan Wu', role: 'Director of Growth', image: null, initials: 'IW' },
-  { name: 'Om Sethi', role: 'Director of Technology', image: null, initials: 'OS' },
+  { name: 'Amaan Sheikh', role: 'Founder', image: '/Headshots/Amaan.JPG', objectPosition: 'center 30%', imageScale: 1.7, imageTranslateY: 8, linkedin: 'https://www.linkedin.com/in/amaansheikhme/', website: 'https://www.amaans.dev/' },
+  { name: 'Charlotte Lee', role: 'Director of Operations', image: '/Headshots/CharlotteLee.png', objectPosition: 'center 50%', imageScale: 1, imageTranslateY: 0, linkedin: 'https://www.linkedin.com/in/charlotte-lee-12795b286/' },
+  { name: 'Ivan Chu', role: 'Director of Finance', image: '/Headshots/IvanChu.png', objectPosition: 'center 50%', imageScale: 1.35, imageTranslateX: -3, linkedin: 'https://www.linkedin.com/in/ivan-chu-/' },
+  { name: 'Om Sethi', role: 'Director of Events & Programming', image: '/Headshots/om.jpeg', objectPosition: 'center 45%', imageScale: 1.0, linkedin: 'https://www.linkedin.com/in/omsethi-dev/', website: 'https://omsethi.dev/' },
+  { name: 'Kyler Shih', role: 'Director of Events & Programming', image: '/Headshots/Kyler.JPG', objectPosition: 'center 30%', imageScale: 1.6, imageTranslateX: -3, imageTranslateY: 10, linkedin: 'https://www.linkedin.com/in/kyler-shih-8a66142bb/' },
+  { name: 'Leya Skaria', role: 'Director of Marketing', image: '/Headshots/Leya.png', objectPosition: 'center 80%', imageScale: 1.5, imageTranslateX: -5, linkedin: 'https://www.linkedin.com/in/leyaskaria/', website: 'https://leyaskarmport.my.canva.site/' },
+  { name: 'Ivan Wu', role: 'Director of Marketing', image: '/Headshots/IvanWu.JPEG', imageScale: 1.6, imageTranslateY: 7, linkedin: 'https://www.linkedin.com/in/ivanwu23/' },
+  { name: 'Christabel Htoo', role: 'Director of Growth & Community', image: '/Headshots/Christabel.JPG', objectPosition: 'center 5%', imageScale: 1.5, imageTranslateY: 10, linkedin: 'https://www.linkedin.com/in/christabel-htoo/' },
+  { name: 'Kevin Qu', role: 'Director of Growth & Community', image: '/Headshots/Kevin.JPEG', objectPosition: 'center 50%', imageScale: 1.35, imageTranslateY: 9, linkedin: 'https://www.linkedin.com/in/kevinqu-swe/' },
+  { name: 'Tahmina Fayezi', role: 'Director of Partnerships', image: '/Headshots/Tahmina.jpeg', objectPosition: 'center 65%', imageScale: 1.25, imageTranslateY: 5, linkedin: 'https://www.linkedin.com/in/tahmina-fayezi/', website: 'https://www.tahmina.tech/' },
+  { name: 'Dev Pradeep', role: 'Director of Partnerships', image: '/Headshots/dev.jpeg', objectPosition: 'center 92%', imageScale: 1.6, imageTranslateX: -1, linkedin: 'https://www.linkedin.com/in/devpradeep-swe/' },
 ]
 
 function MemberCard({ member }: { member: Member }) {
   return (
     <div className="group flex flex-col items-center text-center">
-      <div className="relative w-[110px] h-[110px] md:w-[130px] md:h-[130px] mb-3 rounded-full transition-shadow duration-300 group-hover:shadow-[0_0_28px_rgba(91,156,246,0.40)]">
+      <div className="relative w-[110px] h-[110px] md:w-[130px] md:h-[130px] mb-3 rounded-full overflow-hidden transition-shadow duration-300 group-hover:shadow-[0_0_28px_rgba(91,156,246,0.40)]">
         {member.image ? (
           <Image
             src={member.image}
             alt={member.name}
             fill
-            className="rounded-full object-cover transition-all duration-200"
-            style={{ objectPosition: member.objectPosition || 'center 50%' }}
+            className="object-cover transition-all duration-200"
+            style={{ objectPosition: member.objectPosition || 'center 50%', transform: member.imageScale ? `scale(${member.imageScale}) translateX(${member.imageTranslateX ?? 0}%) translateY(${member.imageTranslateY ?? 0}%)` : undefined }}
           />
         ) : (
           <div className="w-full h-full rounded-full bg-[#111111]/8 border border-[#111111]/10 flex items-center justify-center transition-all duration-200">
@@ -146,18 +151,18 @@ export default function MeetTheTeam() {
                     : 'bg-white text-[#111111] border border-[#111111]/15 hover:border-[#111111]/30'
                 }`}
               >
-                {p} {p === 'S26' ? '— Current' : '— Gen 1'}
+                {p} {p === 'S26' ? '(Current)' : '(Gen 1)'}
               </button>
             ))}
           </div>
 
           <div key={activePeriod} className="animate-fade-up">
             <h2 className="font-serif text-2xl font-bold text-[#111111] mb-10">
-              {activePeriod === 'F25' ? 'Fall 2025 — Gen 1 Board' : 'Spring 2026 — Current Board'}
+              {activePeriod === 'F25' ? 'Fall 2025: Gen 1 Board' : 'Spring 2026: Current Board'}
             </h2>
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-x-6 gap-y-10">
+            <div className="flex flex-wrap justify-center gap-x-6 gap-y-10">
               {(activePeriod === 'F25' ? f25Members : s26Members).map((member, i) => (
-                <div key={member.name + member.role} style={{ animationDelay: `${i * 60}ms` }}>
+                <div key={member.name + member.role} style={{ animationDelay: `${i * 60}ms` }} className="w-[130px] md:w-[150px]">
                   <MemberCard member={member} />
                 </div>
               ))}

@@ -12,12 +12,17 @@ const timelineData = {
     label: 'S25',
     subtitle: 'Where it all began.',
     body: [
-      'Back in Spring 2025, Amaan Sheikh noticed something missing at UB — a space for students who just wanted to build things outside of class. He started reaching out to founders, engineers, and leaders for advice, and everyone agreed: UB needed a community like this.',
+      'Back in Spring 2025, Amaan Sheikh noticed something missing at UB: a space for students who just wanted to build things outside of class. He started reaching out to founders, engineers, and leaders for advice, and everyone agreed: UB needed a community like this.',
       'That idea became Forge. It started small: just a few messages, some calls, and a bunch of "yeah, this should exist" moments. Soon, a team came together, all excited to make UB a place where future founders, devs, designers, and creatives could start building together.',
       'We hosted our first info session and first pitch night that semester. It wasn\'t perfect, but it was packed, and full of momentum. That summer, Amaan connected with alumni in Silicon Valley, got advice from top schools\' campus orgs, and the team built infrastructure for a strong fall launch.',
-      'From a missing piece to a growing community — that\'s how Forge began.',
+      'From a missing piece to a growing community. That\'s how Forge began.',
     ],
-    photos: ['/myImages/pitchpicture.jpg', '/myImages/joinForge.jpg', '/myImages/speaker2.jpg'],
+    photos: ['/myImages/pitch1.png', '/myImages/joinForge.png', '/myImages/speak.jpeg'],
+    photoStyles: [
+      {},
+      { transform: 'scale(1.1)' },
+      { objectPosition: 'left 70%' },
+    ],
   },
   F25: {
     label: 'F25',
@@ -26,20 +31,27 @@ const timelineData = {
       'This semester marked a turning point as momentum truly took hold.',
       'What began as a space for curious builders evolved into a community centered around growth, collaboration, and ambition.',
       'Members connected with alumni and engineers from Amazon, Google, Microsoft, Walmart, Notion, and Vercel. Resume reviews and mentorship sessions turned conversations into action.',
-      'Members regularly pitched ideas, shared progress, and supported one another. Teams attended CalHacks, HackHarvard, and MHacks — with one team earning a track win at UB Hacking. Community events like apple picking helped strengthen connections outside of tech.',
-      'By semester end, Forge had become a launchpad — a place where ideas were explored, confidence was built, and members left ready to pursue what came next.',
+      'Members regularly pitched ideas, shared progress, and supported one another. Teams attended CalHacks, HackHarvard, and MHacks, with one team earning a track win at UB Hacking. Community events like apple picking helped strengthen connections outside of tech.',
+      'By semester end, Forge had become a launchpad: a place where ideas were explored, confidence was built, and members left ready to pursue what came next.',
     ],
     photos: ['/myImages/f25_meeting.jpg', '/myImages/f25_applepicking.jpg', '/myImages/f25_hackathon.jpg'],
   },
   S26: {
     label: 'S26',
-    subtitle: 'The Fellowship begins.',
+    subtitle: 'The Fellowship wraps.',
     body: [
-      'Spring 2026 marks the launch of the Forge Fellowship — a selective, semester-long program for builders ready to ship.',
-      'This semester, Forge continues weekly SunSesh build sessions and Fireside talks while running the Fellowship cohort in parallel.',
-      'More to come.',
+      'Spring 2026 marked the launch of the Forge Fellowship, a selective semester-long program for builders ready to ship.',
+      'The cohort got to tour 43 North, one of the most iconic startup spaces in Buffalo, and spent time with mentors there who shared real advice on building and growing companies.',
+      'They also attended a Red Bull workshop, picking up new perspectives from the experience.',
+      'Outside of building, the cohort hit the slopes together on a snowboarding trip and all fellows grew closer.',
+      'Throughout the semester, fellows were guided by weekly check-ins, hands-on mentorship, and structured accountability, turning early ideas into real, working products. S26 wrapped with Demo Day, where each fellow presented what they built to an audience of mentors, peers, and community members. A semester of building, connecting, and growing. Together.',
     ],
-    photos: ['/myImages/firstpitchnight1.jpg'],
+    photos: ['/myImages/43North.jpeg', '/myImages/Snow.jpeg', '/myImages/Redbull.jpeg'],
+    photoStyles: [
+      { objectPosition: 'center 70%' },
+      { objectPosition: 'center 60%', transform: 'scale(1.05)' },
+      { objectPosition: 'center 70%', transform: 'scale(1.1) translateX(2%)' },
+    ],
   },
 }
 
@@ -86,42 +98,49 @@ export default function About() {
         <DoodleStar size={40} opacity={0.12} className="absolute top-24 right-32 pointer-events-none" />
 
         <div className="max-w-5xl mx-auto">
-          <div className="relative w-full h-64 md:h-80 rounded-2xl overflow-hidden mb-14">
-            <Image
-              src="/myImages/firstpitchnight1.jpg"
-              alt="Forge at UB"
-              fill
-              className="object-cover"
-              style={{ objectPosition: 'center 62%' }}
-              priority
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-[#080808]/60 to-transparent" />
-            <div className="absolute bottom-6 left-8">
-              <span className="text-white/70 text-xs tracking-[0.2em] uppercase">
-                University at Buffalo · Founded S25
-              </span>
-            </div>
-          </div>
-
-          <div
-            ref={heroRef}
-            style={{ opacity: 0, transform: 'translateY(24px)', transition: 'opacity 0.7s ease, transform 0.7s ease' }}
-          >
-            <p className="text-[#888888] text-[11px] tracking-[0.2em] uppercase mb-4">About Forge</p>
-            <h1 className="font-serif text-5xl md:text-6xl font-bold text-[#111111] mb-6">
-              The dev collective for doers.
-            </h1>
-            <p className="text-[#444444] text-xl leading-relaxed mb-8">
-              Extraordinary things happen when ambitious people come together to build. Forge was
-              created to bring that energy to UB — developers, designers, scientists, engineers,
-              founders, and future leaders building in public and finding their people.
-            </p>
-            <Link
-              href="/meet-the-team"
-              className="inline-block border border-[#005bbb] text-[#005bbb] px-6 py-3 rounded-full hover:bg-[#005bbb] hover:text-white transition-colors text-sm font-medium"
+          <div className="flex flex-col md:flex-row gap-12 md:gap-16 items-center">
+            {/* Left column - text */}
+            <div
+              ref={heroRef}
+              className="flex-1"
+              style={{ opacity: 0, transform: 'translateY(24px)', transition: 'opacity 0.7s ease, transform 0.7s ease' }}
             >
-              Meet our team →
-            </Link>
+              <p className="text-[#888888] text-[11px] tracking-[0.2em] uppercase mb-4">About Forge</p>
+              <h1 className="font-serif text-4xl sm:text-5xl md:text-7xl font-bold text-[#111111] mb-6">
+                The dev collective for doers.
+              </h1>
+              <p className="text-[#444444] text-lg md:text-xl leading-relaxed mb-8">
+                Extraordinary things happen when ambitious people come together to build. Forge was
+                created to bring that energy to UB: developers, designers, scientists, engineers,
+                founders, and future leaders building in public and finding their people.
+              </p>
+              <Link
+                href="/meet-the-team"
+                className="inline-block border border-[#005bbb] text-[#005bbb] px-6 py-3 rounded-full hover:bg-[#005bbb] hover:text-white transition-colors text-sm font-medium"
+              >
+                Meet our team →
+              </Link>
+            </div>
+
+            {/* Right column - photo */}
+            <div className="flex-1 w-full">
+              <div className="relative h-80 md:h-[480px] rounded-2xl overflow-hidden">
+                <Image
+                  src="/myImages/aboutp.jpeg"
+                  alt="Forge at UB"
+                  fill
+                  className="object-cover"
+                  style={{ objectPosition: 'center 50%', filter: 'brightness(1.3)' }}
+                  priority
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#080808]/60 to-transparent" />
+                <div className="absolute bottom-6 left-6">
+                  <span className="text-white/70 text-xs tracking-[0.2em] uppercase">
+                    UB Forge · Founded S25
+                  </span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -131,7 +150,7 @@ export default function About() {
         {/* Doodle accent */}
         <DoodleCircle size={160} opacity={0.06} className="absolute bottom-10 right-10 pointer-events-none" />
 
-        <div className="max-w-5xl mx-auto">
+        <div className="max-w-7xl mx-auto">
           <div
             ref={journeyRef}
             style={{ opacity: 0, transform: 'translateY(24px)', transition: 'opacity 0.7s ease, transform 0.7s ease' }}
@@ -140,7 +159,7 @@ export default function About() {
           </div>
 
           {/* Period tabs */}
-          <div className="flex gap-2 mb-14 flex-wrap">
+          <div className="flex gap-2 mb-6 flex-wrap">
             {periods.map((p) => (
               <button
                 key={p.id}
@@ -161,15 +180,24 @@ export default function About() {
 
           <div key={activePeriod}>
             <h3 className="font-serif text-3xl font-bold text-[#111111] mb-2">{data.label}</h3>
-            <p className="text-[#005bbb] font-medium mb-8">{data.subtitle}</p>
+            <p className="text-[#005bbb] font-medium mb-6">{data.subtitle}</p>
 
             {/* Photos */}
-            <div className={`grid gap-4 mb-10 ${data.photos.length >= 3 ? 'grid-cols-1 sm:grid-cols-3' : 'grid-cols-1 max-w-lg'}`}>
-              {data.photos.map((src, i) => (
-                <div key={i} className="relative h-48 sm:h-56 rounded-2xl overflow-hidden">
-                  <Image src={src} alt="" fill className="object-cover" style={{ objectPosition: 'center 50%' }} />
-                </div>
-              ))}
+            <div className={`grid gap-3 mb-8 ${data.photos.length >= 3 ? 'grid-cols-1 sm:grid-cols-3' : 'grid-cols-1 max-w-lg'}`}>
+              {data.photos.map((src, i) => {
+                const photoStyle = (data as { photoStyles?: { objectPosition?: string; transform?: string }[] }).photoStyles?.[i]
+                return (
+                  <div key={i} className={`relative h-44 sm:h-52 rounded-2xl overflow-hidden ${photoStyle?.transform ? 'bg-[#111111]' : ''}`}>
+                    <Image
+                      src={src}
+                      alt=""
+                      fill
+                      className="object-cover"
+                      style={{ objectPosition: photoStyle?.objectPosition ?? 'center 50%', transform: photoStyle?.transform }}
+                    />
+                  </div>
+                )
+              })}
             </div>
 
             <div className="space-y-4">

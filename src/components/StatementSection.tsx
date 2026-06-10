@@ -39,8 +39,8 @@ const StatementSection = () => {
   }
 
   return (
-    <section className="w-full bg-[#f9f6f2] pt-56 pb-36 px-6">
-      {/* Positioning context — wide enough for overflow images */}
+    <section className="w-full bg-[#f9f6f2] pt-24 md:pt-56 pb-20 md:pb-36 px-6">
+      {/* Positioning context - wide enough for overflow images */}
       <div
         ref={wrapRef}
         className="relative max-w-4xl mx-auto"
@@ -69,7 +69,7 @@ const StatementSection = () => {
           </motion.div>
         ))}
 
-        {/* Text — sits above photos */}
+        {/* Text - sits above photos */}
         <div className="relative z-10 max-w-2xl mx-auto text-center py-16">
           <hr className="border-none border-t border-[#111111]/15 mb-14" />
           <div className="relative inline-block">

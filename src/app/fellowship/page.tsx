@@ -22,7 +22,7 @@ export default function Fellowship() {
     <div className="w-full min-h-screen bg-[#f9f6f2]">
       <Navbar />
 
-      {/* Hero — static, cream, matching About page */}
+      {/* Hero - static, cream, matching About page */}
       <section className="w-full pt-32 pb-20 px-8 md:px-20 relative overflow-hidden">
         <DoodleCircle size={220} opacity={0.06} className="absolute -top-10 -right-10 pointer-events-none" />
         <DoodleStar size={40} opacity={0.12} className="absolute top-24 right-32 pointer-events-none" />
@@ -35,7 +35,7 @@ export default function Fellowship() {
             Apply this fall.
           </h1>
           <p className="text-[#444444] text-xl md:text-2xl max-w-2xl leading-relaxed mb-8">
-            The S26 cohort has wrapped. Applications for the F26 cohort open once Fall semester begins — check back in the fall.
+            The S26 cohort has wrapped. Applications for the F26 cohort open once Fall semester begins. Check back in the fall.
           </p>
 
           {/* Status pill */}
@@ -111,7 +111,7 @@ export default function Fellowship() {
       {/* What it is */}
       <section className="w-full py-24 px-8 md:px-20 bg-[#ede8df] border-t border-[#111111]/8">
         <div className="max-w-5xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-center">
             <div className="relative">
               <h2 className="font-serif text-4xl md:text-5xl font-bold text-[#111111] italic leading-tight mb-6">
                 &ldquo;Ideas don&apos;t ship themselves.&rdquo;
@@ -122,7 +122,7 @@ export default function Fellowship() {
                 actually matters.
               </p>
             </div>
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               {whatFellowsDo.map((item) => (
                 <div key={item.num} className="bg-white rounded-2xl p-6">
                   <span className="font-serif text-3xl font-bold text-[#111111]/8 block mb-2">{item.num}</span>
@@ -157,7 +157,7 @@ export default function Fellowship() {
         </div>
       </section>
 
-      {/* CTA — next cycle */}
+      {/* CTA - next cycle */}
       <section className="w-full py-24 px-8 md:px-20 bg-[#f9f6f2] border-t border-[#111111]/8">
         <div className="max-w-3xl mx-auto text-center">
           <p className="text-[#888888] text-xs tracking-[0.2em] uppercase mb-6">

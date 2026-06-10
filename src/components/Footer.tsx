@@ -7,7 +7,7 @@ const Footer = () => {
     <footer className="w-full bg-[#f9f6f2] border-t border-[#111111]/10 py-5 px-8 md:px-16">
       <div className="max-w-6xl mx-auto flex flex-wrap items-center justify-between gap-x-4 gap-y-3">
 
-        {/* Left — copyright + email */}
+        {/* Left - copyright + email */}
         <p className="text-[#888888] text-sm">
           © 2026 UB Forge &nbsp;|&nbsp;{' '}
           <a href="mailto:contactubforge@gmail.com" className="hover:text-[#005bbb] transition-colors">
@@ -15,7 +15,7 @@ const Footer = () => {
           </a>
         </p>
 
-        {/* Right — social icons */}
+        {/* Right - social icons */}
         <div className="flex items-center gap-5">
           {/* Twitter/X */}
           <a

@@ -45,10 +45,10 @@ export default function Projects() {
               What we build.
             </h1>
             <p className="text-[#444444] text-xl max-w-xl">
-              Real projects from the Forge community — hackathons, products, tools, and experiments.
+              Real projects from the Forge community: hackathons, products, tools, and experiments.
             </p>
 
-            {/* Stat strip — commented out until S26 projects are ready to showcase */}
+            {/* Stat strip - commented out until S26 projects are ready to showcase */}
             {/* <div className="flex flex-wrap gap-0 mt-12 mb-4 divide-x divide-[#111111]/10">
               <div className="pr-10">
                 <p className="font-serif text-4xl font-bold text-[#111111]">5+</p>

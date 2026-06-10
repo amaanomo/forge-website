@@ -7,17 +7,17 @@ import { DoodleCircle } from './DoodleAccent'
 const CommunitySection = () => {
   return (
     <section className="relative w-full bg-[#f9f6f2] overflow-hidden">
-      {/* Doodle circle — corner accent */}
+      {/* Doodle circle - corner accent */}
       <DoodleCircle size={120} opacity={0.10} className="absolute top-6 right-6 pointer-events-none" />
 
       <div className="flex flex-col md:flex-row">
-        {/* Left — placeholder gray box */}
+        {/* Left - placeholder gray box */}
         <div
-          className="md:w-1/2 bg-gray-200 flex-shrink-0 h-52 md:h-[520px]"
+          className="md:w-1/2 bg-gray-200 flex-shrink-0 h-52 sm:h-72 md:h-[520px]"
           style={{ borderRadius: 0 }}
         />
 
-        {/* Right — text */}
+        {/* Right - text */}
         <div className="md:w-1/2 flex flex-col justify-center px-10 md:px-16 py-16 md:py-0">
           <p className="text-[#888888] text-[11px] tracking-[0.2em] uppercase mb-10">
             Community
