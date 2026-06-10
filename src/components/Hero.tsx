@@ -8,6 +8,13 @@ import { SparklesText } from '@/components/ui/sparkles-text'
 const Hero = () => {
   const leftRef = useRef<HTMLDivElement>(null)
   const rightRef = useRef<HTMLDivElement>(null)
+  const videoRef = useRef<HTMLVideoElement>(null)
+
+  useEffect(() => {
+    if (videoRef.current) {
+      videoRef.current.play().catch(() => {})
+    }
+  }, [])
 
   useEffect(() => {
     setTimeout(() => {
@@ -101,6 +108,7 @@ const Hero = () => {
           {/* Video wrapper - clips rounded corners, contains overlay */}
           <div className="relative w-full rounded-2xl overflow-hidden shadow-lg z-10">
             <video
+              ref={videoRef}
               src="/addedVids/forgewebvid.mp4"
               autoPlay
               muted
