@@ -12,6 +12,7 @@ const Hero = () => {
 
   useEffect(() => {
     if (videoRef.current) {
+      videoRef.current.muted = true
       videoRef.current.play().catch(() => {})
     }
   }, [])
