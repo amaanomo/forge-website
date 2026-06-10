@@ -151,7 +151,7 @@ export default function MeetTheTeam() {
                     : 'bg-white text-[#111111] border border-[#111111]/15 hover:border-[#111111]/30'
                 }`}
               >
-                {p} {p === 'S26' ? '(Current)' : '(Gen 1)'}
+                {p} {p === 'S26' ? '(Gen 2)' : '(Gen 1)'}
               </button>
             ))}
           </div>

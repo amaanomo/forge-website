@@ -34,7 +34,7 @@ const timelineData = {
       'Members regularly pitched ideas, shared progress, and supported one another. Teams attended CalHacks, HackHarvard, and MHacks, with one team earning a track win at UB Hacking. Community events like apple picking helped strengthen connections outside of tech.',
       'By semester end, Forge had become a launchpad: a place where ideas were explored, confidence was built, and members left ready to pursue what came next.',
     ],
-    photos: ['/myImages/f25_meeting.jpg', '/myImages/f25_applepicking.jpg', '/myImages/f25_hackathon.jpg'],
+    photos: ['/myImages/f25_meeting.jpg', '/myImages/f25_applepicking.jpeg', '/myImages/f25_hackathon.jpg'],
   },
   S26: {
     label: 'S26',
