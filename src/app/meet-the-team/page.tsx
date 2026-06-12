@@ -51,9 +51,9 @@ const s26Members: Member[] = [
   { name: 'Leya Skaria', role: 'Director of Marketing', image: '/Headshots/Leya.png', objectPosition: 'center 80%', imageScale: 1.5, imageTranslateX: -5, linkedin: 'https://www.linkedin.com/in/leyaskaria/', website: 'https://leyaskarmport.my.canva.site/' },
   { name: 'Ivan Wu', role: 'Director of Marketing', image: '/Headshots/IvanWu.JPEG', imageScale: 1.6, imageTranslateY: 7, linkedin: 'https://www.linkedin.com/in/ivanwu23/' },
   { name: 'Christabel Htoo', role: 'Director of Growth & Community', image: '/Headshots/Christabel.JPG', objectPosition: 'center 5%', imageScale: 1.5, imageTranslateY: 10, linkedin: 'https://www.linkedin.com/in/christabel-htoo/' },
-  { name: 'Kevin Qu', role: 'Director of Growth & Community', image: '/Headshots/Kevin.JPEG', objectPosition: 'center 50%', imageScale: 1.35, imageTranslateY: 9, linkedin: 'https://www.linkedin.com/in/kevinqu-swe/' },
+  { name: 'Kevin Qu', role: 'Director of Growth & Community', image: '/Headshots/Kevin.JPEG', objectPosition: 'center 50%', imageScale: 1.35, imageTranslateY: 9, linkedin: 'https://www.linkedin.com/in/kevinqu-swe/', website: 'https://kevinqu.dev' },
   { name: 'Tahmina Fayezi', role: 'Director of Partnerships', image: '/Headshots/Tahmina.jpeg', objectPosition: 'center 65%', imageScale: 1.25, imageTranslateY: 5, linkedin: 'https://www.linkedin.com/in/tahmina-fayezi/', website: 'https://www.tahmina.tech/' },
-  { name: 'Dev Pradeep', role: 'Director of Partnerships', image: '/Headshots/dev.jpeg', objectPosition: 'center 92%', imageScale: 1.6, imageTranslateX: -1, linkedin: 'https://www.linkedin.com/in/devpradeep-swe/' },
+  { name: 'Dev Pradeep', role: 'Director of Partnerships', image: '/Headshots/dev.jpeg', objectPosition: 'center 92%', imageScale: 1.6, imageTranslateX: -1, linkedin: 'https://www.linkedin.com/in/devpradeep-swe/', website: 'https://devpradeep.com' },
 ]
 
 function MemberCard({ member }: { member: Member }) {
