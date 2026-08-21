@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   robots: { index: false, follow: false },
 }
 
-const APPLICATION_URL = 'YOUR_APPLICATION_URL_HERE'
+const APPLICATION_URL = 'https://docs.google.com/forms/d/e/1FAIpQLSfgiHNEPlTkQuYWJ2SNIoBRopQ0fCD_KtWv4ZKlKv01r2QHCQ/viewform?usp=publish-editor'
 
 const positions = [
   {
