@@ -22,6 +22,7 @@ const Chevron = ({ open }: { open: boolean }) => (
 )
 
 const Navbar = () => {
+  const pathname = usePathname()
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const [communityOpen, setCommunityOpen] = useState(false)
   const [getInvolvedOpen, setGetInvolvedOpen] = useState(false)
@@ -76,7 +77,8 @@ const Navbar = () => {
           )}
         </div>
 
-        <Link href="/fellowship" className="text-[#111111]/70 hover:text-[#111111] text-sm transition-colors">
+        <Link href="/fellowship" className="flex items-center gap-1.5 text-[#111111]/70 hover:text-[#111111] text-sm transition-colors">
+          <span className="w-1.5 h-1.5 rounded-full bg-[#005bbb] animate-pulse" />
           Fellowship
         </Link>
 
@@ -108,7 +110,7 @@ const Navbar = () => {
           {getInvolvedOpen && (
             <div className="absolute top-full right-0 mt-2 w-44 bg-white border border-[#111111]/10 rounded-lg py-1.5 shadow-xl z-10">
               <Link
-                href="/fellowship"
+                href="/apply"
                 className="block px-4 py-2 text-sm text-[#111111]/70 hover:text-[#111111] hover:bg-[#111111]/5 transition-colors"
                 onClick={() => setGetInvolvedOpen(false)}
               >
@@ -162,6 +164,15 @@ const Navbar = () => {
         </svg>
       </button>
 
+      {/* Homepage announcement banner */}
+      {pathname === '/' && (
+        <div className="absolute top-full left-0 right-0 bg-[#005bbb] py-2.5 px-8 flex items-center justify-center gap-3 text-sm text-white">
+          <span className="w-1.5 h-1.5 rounded-full bg-white animate-pulse" />
+          <span>Fellowship applications for the F26 cohort are now open! Closes September 16.</span>
+          <Link href="/apply" className="font-medium underline underline-offset-2 hover:text-blue-200 transition-colors">Apply now →</Link>
+        </div>
+      )}
+
       {/* Mobile menu */}
       {mobileMenuOpen && (
         <div className="absolute top-full left-0 right-0 bg-[#f9f6f2] border-b border-[#111111]/10 md:hidden z-50">
@@ -184,7 +195,10 @@ const Navbar = () => {
                 {/* <Link href="/atlas" className="block text-[#111111]/60 hover:text-[#111111] py-1.5 transition-colors text-sm" onClick={() => setMobileMenuOpen(false)}>Atlas</Link> */}
               </div>
             )}
-            <Link href="/fellowship" className="block text-[#111111]/70 hover:text-[#111111] py-2 transition-colors" onClick={() => setMobileMenuOpen(false)}>Fellowship</Link>
+            <Link href="/fellowship" className="flex items-center gap-1.5 text-[#111111]/70 hover:text-[#111111] py-2 transition-colors" onClick={() => setMobileMenuOpen(false)}>
+              <span className="w-1.5 h-1.5 rounded-full bg-[#005bbb] animate-pulse" />
+              Fellowship
+            </Link>
             <div className="border-t border-[#111111]/10 pt-4 space-y-2">
               <a
                 href="https://luma.com/calendar/cal-zJkt69wozQWZhcK"
@@ -196,7 +210,7 @@ const Navbar = () => {
                 View Events
               </a>
               <Link
-                href="/fellowship"
+                href="/apply"
                 className="block bg-[#005bbb] text-white text-center py-3 rounded-md font-medium transition-colors hover:bg-[#3b82f6]"
                 onClick={() => setMobileMenuOpen(false)}
               >

@@ -3,6 +3,8 @@ import Navbar from '../../components/Navbar'
 import Footer from '../../components/Footer'
 import { DoodleCircle, DoodleStar } from '../../components/DoodleAccent'
 
+const APPLICATION_URL = '/apply'
+
 const pillars = [
   { name: 'Ambition', desc: 'We look for people with a bias toward doing, not just thinking.' },
   { name: 'Innovation', desc: 'Novel approaches. Unconventional thinking. Better solutions.' },
@@ -29,29 +31,27 @@ export default function Fellowship() {
 
         <div className="max-w-4xl mx-auto">
           <p className="text-[#888888] text-[11px] tracking-[0.2em] uppercase mb-6">
-            Forge Fellowship · Applications Opening Fall 2026
+            Forge Fellowship · F26 Applications Open
           </p>
           <h1 className="font-serif text-5xl md:text-7xl font-bold text-[#111111] leading-tight mb-6">
-            Apply this fall.
+            Applications are open.
           </h1>
           <p className="text-[#444444] text-xl md:text-2xl max-w-2xl leading-relaxed mb-8">
-            The S26 cohort has wrapped. Applications for the F26 cohort open once Fall semester begins. Check back in the fall.
+            The F26 cohort is now accepting applications. Spots are limited, apply before September 16.
           </p>
 
           {/* Status pill */}
           <div className="inline-flex items-center gap-2 bg-[#111111]/5 border border-[#111111]/15 rounded-full px-5 py-2.5 mb-10">
-            <span className="w-2 h-2 rounded-full bg-[#005bbb] animate-pulse" />
-            <span className="text-[#444444] text-sm">Applications open when Fall semester begins</span>
+            <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
+            <span className="text-[#444444] text-sm">Applications open · Closes September 16</span>
           </div>
 
           <div className="flex flex-col sm:flex-row items-start gap-4">
             <a
-              href="https://www.instagram.com/ub.forge"
-              target="_blank"
-              rel="noopener noreferrer"
+              href={APPLICATION_URL}
               className="bg-[#111111] hover:bg-[#333333] text-white font-medium px-8 py-3.5 rounded-full transition-colors text-sm"
             >
-              Follow @ub.forge for Updates
+              Apply Now
             </a>
             <a
               href="https://luma.com/calendar/cal-zJkt69wozQWZhcK"
@@ -74,7 +74,7 @@ export default function Fellowship() {
           <div className="flex flex-col sm:flex-row items-stretch justify-center gap-0">
             {[
               { label: 'S26', title: 'Wrapped', status: 'done', note: 'Cohort completed' },
-              { label: 'F26', title: 'Coming', status: 'upcoming', note: 'Applications open Fall 2026' },
+              { label: 'F26', title: 'Open', status: 'upcoming', note: 'Applications close Sep 16' },
               { label: 'S27', title: 'Future', status: 'future', note: 'Stay tuned' },
             ].map((cohort, i) => (
               <div
@@ -164,30 +164,27 @@ export default function Fellowship() {
             F26 Fellowship
           </p>
           <h2 className="font-serif text-4xl md:text-5xl font-bold text-[#111111] mb-6">
-            S26 has wrapped.
+            F26 is here.
             <br />
-            <span className="italic text-[#444444]">F26 is your shot.</span>
+            <span className="italic text-[#444444]">Apply before September 16.</span>
           </h2>
           <p className="text-[#444444] text-lg mb-10 leading-relaxed">
-            Applications for the F26 cohort will open in Fall 2026.
-            Follow us on Instagram to be the first to know.
+            Applications are open now. Spots are limited, submit yours before September 16.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+            <a
+              href={APPLICATION_URL}
+              className="bg-[#111111] hover:bg-[#333333] text-white font-medium px-8 py-3.5 rounded-full transition-colors text-sm"
+            >
+              Apply Now
+            </a>
             <a
               href="https://www.instagram.com/ub.forge"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-[#111111] hover:bg-[#333333] text-white font-medium px-8 py-3.5 rounded-full transition-colors text-sm"
-            >
-              Follow @ub.forge
-            </a>
-            <a
-              href="https://luma.com/calendar/cal-zJkt69wozQWZhcK"
-              target="_blank"
-              rel="noopener noreferrer"
               className="text-[#005bbb] hover:text-[#3b82f6] text-sm font-medium transition-colors"
             >
-              Join the Community in the meantime
+              Follow @ub.forge
             </a>
           </div>
         </div>
