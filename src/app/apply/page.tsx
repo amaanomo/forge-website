@@ -11,8 +11,8 @@ export default function Apply() {
         src="https://tally.so/widgets/embed.js"
         strategy="afterInteractive"
         onLoad={() => {
-          if (typeof window !== 'undefined' && (window as any).Tally) {
-            (window as any).Tally.loadEmbeds()
+          if (typeof window !== 'undefined' && (window as { Tally?: { loadEmbeds: () => void } }).Tally) {
+            (window as { Tally?: { loadEmbeds: () => void } }).Tally?.loadEmbeds()
           }
         }}
       />
@@ -22,9 +22,7 @@ export default function Apply() {
           loading="lazy"
           width="100%"
           height="1438"
-          frameBorder={0}
-          marginHeight={0}
-          marginWidth={0}
+          style={{ border: 'none', margin: 0 }}
           title="F26 Forge Fellowship Application"
         />
       </div>
