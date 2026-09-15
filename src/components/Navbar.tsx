@@ -168,7 +168,7 @@ const Navbar = () => {
       {pathname === '/' && (
         <div className="absolute top-full left-0 right-0 bg-[#005bbb] py-2.5 px-8 flex items-center justify-center gap-3 text-sm text-white">
           <span className="w-1.5 h-1.5 rounded-full bg-white animate-pulse" />
-          <span>Fellowship applications for the F26 cohort are now open! Closes September 16.</span>
+          <span>Fellowship applications for the F26 cohort are now open! Closes September 20.</span>
           <Link href="/apply" className="font-medium underline underline-offset-2 hover:text-blue-200 transition-colors">Apply now →</Link>
         </div>
       )}
