@@ -31,28 +31,22 @@ export default function Fellowship() {
 
         <div className="max-w-4xl mx-auto">
           <p className="text-[#888888] text-[11px] tracking-[0.2em] uppercase mb-6">
-            Forge Fellowship · F26 Applications Open
+            Forge Fellowship · F26 Applications Closed
           </p>
           <h1 className="font-serif text-5xl md:text-7xl font-bold text-[#111111] leading-tight mb-6">
-            Applications are open.
+            Applications are closed.
           </h1>
           <p className="text-[#444444] text-xl md:text-2xl max-w-2xl leading-relaxed mb-8">
-            The F26 cohort is now accepting applications. Spots are limited, apply before September 20.
+            The F26 cohort application window has closed. Thank you for your interest.
           </p>
 
           {/* Status pill */}
           <div className="inline-flex items-center gap-2 bg-[#111111]/5 border border-[#111111]/15 rounded-full px-5 py-2.5 mb-10">
-            <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
-            <span className="text-[#444444] text-sm">Applications open · Closes September 20</span>
+            <span className="w-2 h-2 rounded-full bg-[#888888]" />
+            <span className="text-[#444444] text-sm">Applications closed · September 20, 2026</span>
           </div>
 
           <div className="flex flex-col sm:flex-row items-start gap-4">
-            <a
-              href={APPLICATION_URL}
-              className="bg-[#111111] hover:bg-[#333333] text-white font-medium px-8 py-3.5 rounded-full transition-colors text-sm"
-            >
-              Apply Now
-            </a>
             <a
               href="https://luma.com/calendar/cal-zJkt69wozQWZhcK"
               target="_blank"
@@ -74,7 +68,7 @@ export default function Fellowship() {
           <div className="flex flex-col sm:flex-row items-stretch justify-center gap-0">
             {[
               { label: 'S26', title: 'Wrapped', status: 'done', note: 'Cohort completed' },
-              { label: 'F26', title: 'Open', status: 'upcoming', note: 'Applications close Sep 20' },
+              { label: 'F26', title: 'Closed', status: 'done', note: 'Applications closed Sep 20' },
               { label: 'S27', title: 'Future', status: 'future', note: 'Stay tuned' },
             ].map((cohort, i) => (
               <div
@@ -164,20 +158,14 @@ export default function Fellowship() {
             F26 Fellowship
           </p>
           <h2 className="font-serif text-4xl md:text-5xl font-bold text-[#111111] mb-6">
-            F26 is here.
+            F26 applications
             <br />
-            <span className="italic text-[#444444]">Apply before September 20.</span>
+            <span className="italic text-[#444444]">are now closed.</span>
           </h2>
           <p className="text-[#444444] text-lg mb-10 leading-relaxed">
-            Applications are open now. Spots are limited, submit yours before September 20.
+            The application window for F26 has closed. Stay tuned for the next cohort.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <a
-              href={APPLICATION_URL}
-              className="bg-[#111111] hover:bg-[#333333] text-white font-medium px-8 py-3.5 rounded-full transition-colors text-sm"
-            >
-              Apply Now
-            </a>
             <a
               href="https://www.instagram.com/ub.forge"
               target="_blank"
